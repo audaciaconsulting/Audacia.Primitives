@@ -5,6 +5,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <WarningLevel>9999</WarningLevel>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
