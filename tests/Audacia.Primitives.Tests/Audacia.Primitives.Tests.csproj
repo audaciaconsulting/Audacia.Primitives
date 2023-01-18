@@ -25,7 +25,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\Audacia.Primitives\Audacia.Primitives.csproj" />
-      <ProjectReference Include="..\src\Audacia.Primitives\Audacia.Primitives.csproj" />
     </ItemGroup>
 
 </Project>
