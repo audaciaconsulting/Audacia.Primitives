@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Audacia.Primitives.Extensions
+namespace Audacia.Primitives
 {
     /// <summary>
     /// Extensions to <see cref="IEnumerable{T}"/> relating to entities that implement <see cref="IHasId"/>.
