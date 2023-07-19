@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audacia.Primitives", "src\Audacia.Primitives\Audacia.Primitives.csproj", "{7345738D-AFF4-434F-B16C-4C90D5F493D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audacia.Primitives", "src\Audacia.Primitives\Audacia.Primitives.csproj", "{7345738D-AFF4-434F-B16C-4C90D5F493D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{78D5DFD1-1548-4235-BFD5-BB853E7EA47C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4C54F6A7-C4AA-412C-853B-57DC8C89B5C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audacia.Primitives.Tests", "tests\Audacia.Primitives.Tests\Audacia.Primitives.Tests.csproj", "{78EE870E-0001-474D-B59D-766BFA840BAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audacia.Primitives.Tests", "tests\Audacia.Primitives.Tests\Audacia.Primitives.Tests.csproj", "{78EE870E-0001-474D-B59D-766BFA840BAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,11 +29,11 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {114024C3-0B4D-4256-99F9-C8F2F1FBB03E}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7345738D-AFF4-434F-B16C-4C90D5F493D1} = {78D5DFD1-1548-4235-BFD5-BB853E7EA47C}
 		{78EE870E-0001-474D-B59D-766BFA840BAB} = {4C54F6A7-C4AA-412C-853B-57DC8C89B5C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {114024C3-0B4D-4256-99F9-C8F2F1FBB03E}
 	EndGlobalSection
 EndGlobal

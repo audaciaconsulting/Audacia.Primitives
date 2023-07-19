@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>	  
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	<LangVersion>8.0</LangVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <WarningLevel>9999</WarningLevel>
 	  <Version>1.2.0</Version>
@@ -11,12 +12,13 @@
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageIcon>package-icon.png</PackageIcon>
+	  <Nullable>enable</Nullable>
   </PropertyGroup>
 	
   <ItemGroup>
 	  <None Include="package-icon.png">
 		  <Pack>True</Pack>
-		  <PackagePath>\</PackagePath>
+		  <PackagePath>""</PackagePath>
 	  </None>
   </ItemGroup>
 	
