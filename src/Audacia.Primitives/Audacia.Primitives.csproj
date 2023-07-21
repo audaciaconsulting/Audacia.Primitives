@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>	  
+    <TargetFramework>netstandard2.1</TargetFramework>	  
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-	<LangVersion>8.0</LangVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <WarningLevel>9999</WarningLevel>
 	  <Version>1.2.0</Version>
