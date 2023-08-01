@@ -6,12 +6,12 @@
         /// <summary>
         /// Gets or sets the Id.
         /// </summary>
-        public TId Id { get; set; }
+        public TId Id { get; set; } = default!;
 
         /// <summary>
         /// Gets or sets the type.
         /// </summary>
-        public TType Type { get; set; }
+        public TType Type { get; set; } = default!;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="IdTypePair{TId, TType}"/> class.

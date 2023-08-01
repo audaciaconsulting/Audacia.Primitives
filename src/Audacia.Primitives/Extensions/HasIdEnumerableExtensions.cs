@@ -15,11 +15,10 @@ namespace Audacia.Primitives
         /// <param name="enumerable">The collection to filter.</param>
         /// <param name="id">The Id to match.</param>
         /// <returns>An <see cref="IQueryable{T}"/> instance that has been filtered to the given <paramref name="id"/>.</returns>
-        public static IQueryable<T> WithId<T>(this IEnumerable<T> enumerable, int id)
+        public static IEnumerable<T> WithId<T>(this IEnumerable<T> enumerable, int id)
             where T : IHasId
         {
             return enumerable
-                .AsQueryable()
                 .Where(item => item.Id == id);
         }
 
@@ -45,10 +44,10 @@ namespace Audacia.Primitives
             var entityWithIds = source as T[] ?? source.ToArray();
             var newItemsList = newItems.ToList();
             var toAdd = newItemsList
-                .Where(newModel => newModel.IsNew() || entityWithIds.All(entity => entity.Id != newModel.Id))
+                .Where(newModel => newModel.IsNew() || entityWithIds.ToList().TrueForAll(entity => entity.Id != newModel.Id))
                 .ToList();
 
-            var toRemove = entityWithIds.Where(entity => newItemsList.All(newEntity => newEntity.Id != entity.Id))
+            var toRemove = entityWithIds.Where(entity => newItemsList.TrueForAll(newEntity => newEntity.Id != entity.Id))
                 .ToList();
 
             var toUpdate = entityWithIds

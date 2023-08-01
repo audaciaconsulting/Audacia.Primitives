@@ -6,12 +6,12 @@
         /// <summary>
         /// Gets or sets the Id.
         /// </summary>
-        public TId Id { get; set; }
+        public TId Id { get; set; } = default!;
 
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = default!;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="IdNamePair{TId}"/> class.
