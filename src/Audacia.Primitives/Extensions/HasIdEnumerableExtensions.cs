@@ -15,6 +15,7 @@ namespace Audacia.Primitives
         /// <param name="enumerable">The collection to filter.</param>
         /// <param name="id">The Id to match.</param>
         /// <returns>An <see cref="IQueryable{T}"/> instance that has been filtered to the given <paramref name="id"/>.</returns>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Miscellaneous Design", "AV1250:Evaluate LINQ query before returning it", Justification = "Deferred execution by design as intended to be chained with other method calls.")]
         public static IEnumerable<T> WithId<T>(this IEnumerable<T> enumerable, int id)
             where T : IHasId
         {
