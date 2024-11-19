@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.1 - 2024-09-06
+### Added
+- CHANGELOG.md file added
+
+### Changed
+- README.md updated to include CHANGELOG.md reference
+
 ## 1.2.0 - 2023-08-01
 ### Added
 - No new functionality added
