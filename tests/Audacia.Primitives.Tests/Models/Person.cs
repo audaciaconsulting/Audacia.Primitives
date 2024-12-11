@@ -6,8 +6,7 @@ public class Person : IHasId
 
     public string? FirstName { get; set; }
 
-    public string? LastName { get; set; }
-    
+
     public Person(int id)
     {
         Id = id;
