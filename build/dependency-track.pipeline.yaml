@@ -6,7 +6,7 @@ schedules:
     displayName: Weekly Dependency Check
     branches:
       include:
-        - dev
+        - main
     always: true
 resources:
   repositories:
