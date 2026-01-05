@@ -40,7 +40,7 @@ variables:
     value: ''
 
   # Project paths and settings
-  - name: audaciaMiddlewareProjectPaths
+  - name: audaciaPrimitivesProjectPaths
     value: |
       $(System.DefaultWorkingDirectory)/src/Audacia.Primitives/Audacia.Primitives.csproj
       $(System.DefaultWorkingDirectory)/tests/Audacia.Primitives.Tests/Audacia.Primitives.Tests.csproj
@@ -69,7 +69,7 @@ stages:
           # Generate .NET SBOMs
           - template: /src/security/dependency-track/steps/generate-dotnet-sbom.steps.yaml@templates
             parameters:
-              dotnetProjects: $(audaciaMiddlewareProjectPaths)
+              dotnetProjects: $(audaciaPrimitivesProjectPaths)
               vstsFeed: ${{ variables.vstsFeed }}
               publishArtifact: ${{ variables.publishArtifact }}
               artifactName: $(artifactName)
