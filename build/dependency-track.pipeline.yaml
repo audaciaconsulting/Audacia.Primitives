@@ -1,13 +1,7 @@
 name: $(Year:yy)$(DayOfYear).$(Rev:r)
-trigger: none
+trigger:
+  - main
 pr: none
-schedules:
-  - cron: "00 2 * * 2" # 02:00 am every Tuesday
-    displayName: Weekly Dependency Check
-    branches:
-      include:
-        - main
-    always: true
 resources:
   repositories:
     - repository: templates
