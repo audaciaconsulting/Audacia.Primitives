@@ -10,7 +10,7 @@
 - Replaced `FluentAssertions` with `Shouldy` in the test project.
 
 ### Removed
-= No functionality removed.
+- No functionality removed.
 
 ## 1.2.1 - 2024-09-06
 ### Added
