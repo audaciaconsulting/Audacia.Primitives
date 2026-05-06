@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.2 - 2026-05-06
+### Added
+- No new functionality added.
+
+### Changed
+- Updated test project to .NET 10.
+- Updated NuGet package dependencies to the latest versions solution-wide.
+- Replaced `FluentAssertions` with `Shouldy` in the test project.
+
+### Removed
+= No functionality removed.
+
 ## 1.2.1 - 2024-09-06
 ### Added
 - CHANGELOG.md file added
