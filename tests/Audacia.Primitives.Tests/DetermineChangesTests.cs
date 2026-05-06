@@ -1,6 +1,6 @@
 using Audacia.Primitives.Tests.Models;
 using Audacia.Random.Extensions;
-using FluentAssertions;
+using Shouldly;
 
 namespace Audacia.Primitives.Tests;
 
@@ -37,9 +37,9 @@ public class DetermineChangesTests
         var (toAdd, toUpdate, toRemove) = existingSource.DetermineChanges(newSource);
 
         // Assert
-        toAdd.Should().BeEquivalentTo(newSource);
-        toUpdate.Should().BeEmpty();
-        toRemove.Should().BeEmpty();
+        toAdd.ShouldBeEquivalentTo(newSource);
+        toUpdate.ShouldBeEmpty();
+        toRemove.ShouldBeEmpty();
     }
 
     [Fact]
@@ -59,9 +59,9 @@ public class DetermineChangesTests
         var (toAdd, toUpdate, toRemove) = _existingSource.DetermineChanges(newSource);
 
         // Assert
-        toAdd.Should().BeEmpty();
-        toUpdate.Should().BeEquivalentTo(newSource);
-        toRemove.Should().BeEmpty();
+        toAdd.ShouldBeEmpty();
+        toUpdate.ShouldBeEquivalentTo(newSource);
+        toRemove.ShouldBeEmpty();
     }
 
     [Fact]
@@ -74,9 +74,9 @@ public class DetermineChangesTests
         var (toAdd, toUpdate, toRemove) = _existingSource.DetermineChanges(newSource);
 
         // Assert
-        toAdd.Should().BeEmpty();
-        toUpdate.Should().BeEmpty();
-        toRemove.Should().BeEquivalentTo(_existingSource);
+        toAdd.ShouldBeEmpty();
+        toUpdate.ShouldBeEmpty();
+        toRemove.ShouldBeEquivalentTo(_existingSource);
     }
 
     [Fact]
@@ -108,8 +108,8 @@ public class DetermineChangesTests
         var (toAdd, toUpdate, toRemove) = _existingSource.DetermineChanges(newSource);
 
         // Assert
-        toAdd.Should().BeEquivalentTo(peopleToAdd);
-        toUpdate.Should().BeEquivalentTo(peopleToUpdate);
-        toRemove.Should().BeEquivalentTo(peopleToRemove);
+        toAdd.ShouldBeEquivalentTo(peopleToAdd);
+        toUpdate.ShouldBeEquivalentTo(peopleToUpdate);
+        toRemove.ShouldBeEquivalentTo(peopleToRemove);
     }
 }
