@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.3 - 2026-05-1
+## 1.2.3 - 2026-05-11
 ### Added
 - No new functionality added.
 
