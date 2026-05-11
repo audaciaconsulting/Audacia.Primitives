@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.3 - 2026-05-1
+### Added
+- No new functionality added.
+
+### Changed
+- Removed the CHANGELOG reference from the README.
+
+### Removed
+- No functionality removed.
+
 ## 1.2.2 - 2026-05-06
 ### Added
 - No new functionality added.
