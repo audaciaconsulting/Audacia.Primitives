@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.4 - 2026-10-30
+### Added
+- No new functionality added.
+
 ## 1.2.3 - 2026-05-11
 ### Added
 - No new functionality added.
